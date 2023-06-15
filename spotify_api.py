@@ -3,11 +3,11 @@ import spotipy
 import spotipy.util as util
 import numpy as np
 
-username = ""
+username = "1285371591"
 
 # Spotify Token Access
-client_id = ""
-client_secret = ""
+client_id = "04529bbb677c4f77bdc07e60286be763"
+client_secret = "ce98bcef519e4805a35c1eb5e3b98912"
 if not client_id or not client_secret or not username:
     print('ERROR: One of client_id, client_secret, or username is unset in spotify_api.py.')
     exit(1)

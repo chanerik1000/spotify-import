@@ -12,9 +12,13 @@ pip install requirements.txt (run in terminal) <br >
 3. Select the app.
 4. Select **EDIT SETTINGS**.
 5. Under **Redirect URIs**, enter `http://localhost:8888/callback` and select **Add**. Select **SAVE**.
-6. Find **Client ID** and copy the value to the `client_id` variable in [spotify_api.py](./spotify_api.py).
-7. Select **SHOW CLIENT SECRET**. Copy the value to the `client_secret` variable in [spotify_api.py](./spotify_api.py).
-8. Go to https://spotify.com > **Profile** > **Account**.
-9. Copy the value of **Username** to the `username` variable in [spotify_api.py](./spotify_api.py).
-10. Save the edited file.
+6. Rename .env.local.example to .env.local
+7. Find **Client ID** and copy the value to the `client_id` variable in .env.local.
+8. Select **SHOW CLIENT SECRET**. Copy the value to the `client_secret` variable in .env.local.
+9. Go to https://spotify.com > **Profile** > **Account**.
+10. Copy the value of **Username** to the `username` variable in .env.local.
+12. Save the edited file.
 
+### 4. Run Program
+
+Run the program using terminal by using python music-import.py
