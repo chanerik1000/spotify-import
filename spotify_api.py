@@ -2,12 +2,13 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 import spotipy.util as util
 import numpy as np
+from dotenv import load_dotenv
+import os
 
-username = ""
+client_id = os.getenv('CLIENT_ID')
+client_secret = os.getenv('CLIENT_SECRET')
+username = os.getenv('USERNAME')
 
-# Spotify Token Access
-client_id = ""
-client_secret = ""
 if not client_id or not client_secret or not username:
     print('ERROR: One of client_id, client_secret, or username is unset in spotify_api.py.')
     exit(1)
