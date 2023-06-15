@@ -9,7 +9,7 @@ username = ""
 client_id = ""
 client_secret = ""
 if not client_id or not client_secret or not username:
-    print('ERROR: One of client_id, client_secret, or username is unset in spotify_accessor.py.')
+    print('ERROR: One of client_id, client_secret, or username is unset in api.py.')
     exit(1)
 
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
